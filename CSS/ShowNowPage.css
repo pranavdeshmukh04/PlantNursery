@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,600|Arvo:700");
+/*LOGO*/
+html{
+    scroll-behavior: smooth;
+} 
+/*LOGO*/
+.logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 33px;
+}
+.logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 66px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+/*UPPERBODY*/
+.upperbody-content{
+    position: absolute;
+    width: 1519px;
+    height: 1404px;
+    left: 0px;
+    top: 0px;
+    background: #A2D5C6;
+}
+.upperbody-headline{
+    position: absolute;
+    width: 1350px;
+    height: 0px;
+    left: 95px;
+    top: 113px;
+    border: 1.6px solid rgba(7, 123, 138, 0.4);
+    background-color: rgba(7, 123, 138, 0.4);
+}
+.logo-cart{
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    left: 1285px;
+    top: 40px;
+}
+.logo-profile{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 1360px;
+    top: 40px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.header-texts{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #000000;
+}
+.header-plants{
+    position: absolute;
+    width: 95px;
+    height: 27px;
+    left: 557px;
+    top: 34px;
+}
+.header-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 671px;
+    top: 34px;
+    cursor: pointer;
+}
+.header-bestselling{
+  position: absolute;
+  width: 159px;
+  height: 27px;
+  left: 857px;
+  top: 34px;
+}
+.header-potsnacc{
+    position: absolute;
+    width: 159px;
+    height: 27px;
+    left: 857px;
+    top: 54px;
+}
+.header-faq{
+    position: absolute;
+    width: 54px;
+    height: 27px;
+    left: 1035px;
+    top: 34px;
+}
+.header-contact{
+    position: absolute;
+    width: 113px;
+    height: 27px;
+    left: 1108px;
+    top: 34px;
+    cursor: pointer;
+}
+/*SHOP Now*/
+
+.shopnow-container-content{
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  width: 1350px;
+  height: 1200px;
+}
+div.shop-items{
+  display: grid;
+  width: 50vw;
+  height: 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 120px;
+  height: 120px;
+  grid-gap: 40px;
+}
+.shop-item{
+  width: 300px;
+  height: 350px;
+  background-color: #d5eae4;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  color: #000000;
+}
+.shop-item-price{
+  color: #077B8A;
+}
+.shop-item:hover{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.6s ease;
+  transform: translateY(-15px);
+}
+.plant1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.plant2{
+  position: absolute;
+  left: 350px;
+  top: 0px;
+}
+.plant3{
+  position: absolute;
+  left: 700px;
+  top: 0px;
+}
+.plant4{
+  position: absolute;
+  left: 1050px;
+  top: 0px;
+}
+.plant5{
+  position: absolute;
+  left: 0px;
+  top: 400px;
+}
+.plant6{
+  position: absolute;
+  left: 350px;
+  top: 400px;
+}
+.plant7{
+  position: absolute;
+  left: 700px;
+  top: 400px;
+}
+.plant8{
+  position: absolute;
+  left: 1050px;
+  top: 400px;
+}
+.plant9{
+  position: absolute;
+  left: 0px;
+  top: 800px;
+}
+.plant10{
+  position: absolute;
+  left: 350px;
+  top: 800px;
+}
+.plant11{
+  position: absolute;
+  left: 700px;
+  top: 800px;
+}
+.plant12{
+  position: absolute;
+  left: 1050px;
+  top: 800px;
+  background-color: #ffcdcf;
+}
+.shop-item-button{
+  color: white;
+  background-color:  #e86069;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 10px 40px;
+  font-family: 'Arvo';
+  font-style: normal;
+  font-size: 15px;
+  cursor: pointer;
+}
+.shop-item-button:hover{
+  background-color:  #D72631;
+}
+/*POTS N ACC*/
+.potsnacc-container-content{
+  position: absolute;
+  width: 1519px;
+  height: 510px;
+  left: 0px;
+  top: 1390px;
+  background: #D72631;
+}
+.potsnacc-text{
+  position: absolute;
+  width: 233px;
+  height: 123px;
+  left: 90px;
+  top: 0px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+.potsnacc-headline{
+  position: absolute;
+  width: 470px;
+  height: 0px;
+  left: 90px;
+  top: 90px;
+
+  border: 1.6px solid rgba(255, 255, 255, 0.76);
+  background-color:  rgba(255, 255, 255, 0.76);
+
+}
+.pot1{
+  position: absolute;
+  left: 90px;
+  top: 120px;
+}
+.pot2{
+  position: absolute;
+  left: 440px;
+  top: 120px;
+}
+.pot3{
+  position: absolute;
+  left: 790px;
+  top: 120px;
+}
+.acc1{
+  position: absolute;
+  left: 1140px;
+  top: 120px;
+}
+.shop-item-button{
+  color: white;
+  background-color:  #e86069;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 10px 40px;
+  font-family: 'Arvo';
+  font-style: normal;
+  font-size: 15px;
+  cursor: pointer;
+}
+.shop-item-button:hover{
+  background-color:  #D72631;
+}
+/*CONTACT US*/
+.contacts-content{
+    position: absolute;
+    width: 1519px;
+    height: 283px;
+    left: 0px;
+    top: 1900px;
+    background: #077B8A;
+}
+.contacts-logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 93px;
+}
+.contacts-logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 80px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.contacts-logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 127px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+.contacts-contactus-text{
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 500px;
+    top: 35px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #073C43;
+}
+.contacts-contactus-address-text{
+    position: absolute;
+    width: 250px;
+    top: 80px;
+    left: 535px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #073C43;
+}
+.contacts-contactus-address-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 98px;
+}
+.contacts-contactus-email-text{
+    
+    position: absolute;
+    left: 535px;
+    top: 138px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #073C43;
+}
+.contacts-contactus-email-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 150px;
+}
+.contacts-button-home{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-plants{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 55px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 820px;
+    top: 90px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-potsnacc{
+    position: absolute;
+    width: 159px;
+    height: 28px;
+    left: 820px;
+    top: 125px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-faq{
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    left: 820px;
+    top: 160px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-ask-text{
+    position: absolute;
+    width: 400px;
+    height: 39px;
+    left: 1000px;
+    top: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.contacts-ask-textbox{
+    position: absolute;
+    width: 260px;
+    height: 43.54px;
+    left: 1100px;
+    top: 90px;
+
+    border-radius: 15px;
+    border-style: hidden;
+}
+.contacts-ask-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 26px;
+
+    position: absolute;
+    width: 265px;
+    height: 43.54px;
+    left: 1100px;
+    top: 150px;
+
+    background: #073C43;
+    border-radius: 10px;
+    border-style: hidden;
+    cursor: pointer;
+}
+.contacts-ask-button-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}   
+

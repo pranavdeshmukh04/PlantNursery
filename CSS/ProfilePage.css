@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,600|Arvo:700");
+/*LOGO*/
+html{
+    scroll-behavior: smooth;
+}
+.logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 33px;
+}
+.logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 66px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+/*UPPERBODY*/
+.upperbody-content{
+    position: absolute;
+    width: 1519px;
+    height: 804px;
+    left: 0px;
+    top: 0px;
+    background: #A2D5C6;
+}
+.upperbody-headline{
+    position: absolute;
+    width: 1350px;
+    height: 0px;
+    left: 95px;
+    top: 113px;
+    border: 1.6px solid rgba(7, 123, 138, 0.4);
+    background-color: rgba(7, 123, 138, 0.4);
+}
+.logo-cart{
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    left: 1285px;
+    top: 40px;
+}
+.logo-profile{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 1360px;
+    top: 40px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.header-texts{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #000000;
+}
+.header-plants{
+    position: absolute;
+    width: 95px;
+    height: 27px;
+    left: 557px;
+    top: 34px;
+}
+.header-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 671px;
+    top: 34px;
+    cursor: pointer;
+}
+.header-bestselling{
+    position: absolute;
+    width: 159px;
+    height: 27px;
+    left: 857px;
+    top: 34px;
+}
+.header-faq{
+    position: absolute;
+    width: 54px;
+    height: 27px;
+    left: 1035px;
+    top: 34px;
+}
+.header-contact{
+    position: absolute;
+    width: 113px;
+    height: 27px;
+    left: 1108px;
+    top: 34px;
+    cursor: pointer;
+}
+/*PROFILE*/
+.profile-content{
+    position: absolute;
+    width: 1200px;
+    height: 590px;
+    top: 150px;
+    left: 170px;
+    background-color: #d5eae4;
+    border-radius: 20px;
+    border-radius: 20px;
+}
+.profile-text{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #077B8A;
+}
+.profile-headline{
+    position: absolute;
+    width: 160px;
+    height: 0px;
+    left: 55px;
+    top: 75px;
+    border: 1.6px solid rgba(7, 123, 138, 0.4);
+    background-color: rgba(7, 123, 138, 0.4);
+}
+.username-text{
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: black;
+}
+.email-text{
+    position: absolute;
+    left: 60px;
+    top: 170px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: black;
+}
+.address-text{
+    position: absolute;
+    left: 60px;
+    top: 220px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: black;
+}
+.add-address-text{
+    position: absolute;
+    left: 700px;
+    top: 120px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: black;
+}
+.address-input{
+    position: absolute;
+    left: 700px;
+    top: 160px;
+    width: 480px;
+    height: 100px;
+    border-radius: 15px;
+    border-style: hidden;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 37px;
+    color: black;
+}
+.address-btn{
+    position: absolute;
+    left: 690px;
+    top: 280px;
+    color: white;
+    background-color:  #e86069;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px 40px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .address-btn:hover{
+    background-color:  #D72631;
+  }
+
+/*CONTACT US*/
+.contacts-content{
+    position: absolute;
+    width: 1519px;
+    height: 283px;
+    left: 0px;
+    top: 800px;
+
+    background: #077B8A;
+}
+.contacts-logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 93px;
+}
+.contacts-logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 80px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.contacts-logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 127px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+.contacts-contactus-text{
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 500px;
+    top: 35px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #073C43;
+}
+.contacts-contactus-address-text{
+    position: absolute;
+    width: 250px;
+    top: 80px;
+    left: 535px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #073C43;
+}
+.contacts-contactus-address-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 98px;
+}
+.contacts-contactus-email-text{
+    
+    position: absolute;
+    left: 535px;
+    top: 138px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #073C43;
+}
+.contacts-contactus-email-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 150px;
+}
+.contacts-button-home{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-plants{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 55px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 820px;
+    top: 90px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-bestselling{
+    position: absolute;
+    width: 159px;
+    height: 28px;
+    left: 820px;
+    top: 125px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-faq{
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    left: 820px;
+    top: 160px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-ask-text{
+    position: absolute;
+    width: 400px;
+    height: 39px;
+    left: 1000px;
+    top: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.contacts-ask-textbox{
+    position: absolute;
+    width: 260px;
+    height: 43.54px;
+    left: 1100px;
+    top: 90px;
+
+    border-radius: 15px;
+    border-style: hidden;
+}
+.contacts-ask-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 26px;
+
+    position: absolute;
+    width: 265px;
+    height: 43.54px;
+    left: 1100px;
+    top: 150px;
+
+    background: #073C43;
+    border-radius: 10px;
+    border-style: hidden;
+    cursor: pointer;
+}
+.contacts-ask-button-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}

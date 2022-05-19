@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,600|Arvo:700");
+/*LOGO*/
+html{
+    scroll-behavior: smooth;
+}
+.logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 33px;
+}
+.logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 66px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+/*UPPERBODY*/
+.upperbody-content{
+    position: absolute;
+    width: 1519px;
+    height: 804px;
+    left: 0px;
+    top: 0px;
+    background: #A2D5C6;
+}
+.upperbody-headline{
+    position: absolute;
+    width: 1350px;
+    height: 0px;
+    left: 95px;
+    top: 113px;
+    border: 1.6px solid rgba(7, 123, 138, 0.4);
+    background-color: rgba(7, 123, 138, 0.4);
+}
+.logo-cart{
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    left: 1285px;
+    top: 40px;
+}
+.logo-profile{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 1360px;
+    top: 40px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.header-texts{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #000000;
+}
+.header-plants{
+    position: absolute;
+    width: 95px;
+    height: 27px;
+    left: 557px;
+    top: 34px;
+}
+.header-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 671px;
+    top: 34px;
+    cursor: pointer;
+}
+.header-bestselling{
+    position: absolute;
+    width: 159px;
+    height: 27px;
+    left: 857px;
+    top: 34px;
+}
+.header-faq{
+    position: absolute;
+    width: 54px;
+    height: 27px;
+    left: 1035px;
+    top: 34px;
+}
+.header-contact{
+    position: absolute;
+    width: 113px;
+    height: 27px;
+    left: 1108px;
+    top: 34px;
+    cursor: pointer;
+}
+.home-garden{
+    position: absolute;
+    width: 600px;
+    height: 461px;
+    left: 95px;
+    top: 75px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 94%;
+    color: #000000;
+}
+.believe-tomorrow{
+    position: absolute;
+    width: 468px;
+    height: 78px;
+    left: 95px;
+    top: 499px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 105.5%;
+
+    color: #000000;
+}
+.upperbody-plant-ellipse{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    left: 690px;
+    top: 246px;
+    border-radius: 50%;
+    background: #077B8A;
+}
+.plant-img {
+    position: absolute;
+    width: 558px;
+    height: 610px; /*655*/
+    left: 624px;
+    top: 74px;
+}
+.upperbody-sunlight{
+    position: absolute;
+    width: 204px;
+    height: 91px;
+    left: 1203px;
+    top: 331px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.upperbody-humidity{
+    position: absolute;
+    width: 204px;
+    height: 91px;
+    left: 1203px;
+    top: 465px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.upperbody-watering{
+    position: absolute;
+    width: 204px;
+    height: 91px;
+    left: 1203px;
+    top: 599px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.upperbody-sunlight-text1,.upperbody-humidity-text1,.upperbody-watering-text1{
+    position: absolute;
+    left: 33%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 111.5%;
+    color: #000000;
+}
+.upperbody-sunlight-text2,.upperbody-humidity-text2,.upperbody-watering-text2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 111.5%;
+    color: rgba(0, 0, 0, 0.71);
+}
+.upperbody-sunlight-text2{
+    position: absolute;
+    left: 36%;
+    top: 40%;
+}
+.upperbody-humidity-text2{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+.upperbody-watering-text2{
+    position: absolute;
+    left: 42%;
+    top: 40%;
+}
+.sunlight-logo1{
+    position: absolute;
+    left: -6px;
+    right: 17.36%;
+    top: 22px;
+    bottom: 84.05%;
+    height: 45%;
+    width: 45%;
+}
+.sunlight-logo{
+    position: absolute;
+    left: 10%;
+    right: 17.36%;
+    top: 27%;
+    bottom: 84.05%;
+}
+.humidity-logo{
+    position: absolute;
+    left: 10%;
+    right: 17.36%;
+    top: 27%;
+    bottom: 84.05%;
+}
+.raindrop-logo{
+    position: absolute;
+    left: 10%;
+    right: 17.36%;
+    top: 27%;
+    bottom: 84.05%;
+}
+.upperbody-shop-button{
+    position: absolute;
+    width: 217px;
+    height: 75px;
+    left: 94px;
+    top: 640px;
+    background: #5C3C92;
+    border-radius: 40px;
+    border-style: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+.upperbody-takingcare-button{
+    position: absolute;
+    width: 240px;
+    height: 75px;
+    left: 384px;
+    top: 640px;
+    background: #5C3C92;
+    border-radius: 40px;
+    border-style: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+.upperbody-shop-text{
+    position: absolute;
+    width: 161px;
+    height: 31px;
+    left: 124px;
+    top: 646px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 105.5%;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.upperbody-takingcare-text{
+    position: absolute;
+    width: 173px;
+    height: 31px;
+    left: 410px;
+    top: 646px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 105.5%;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.upperbody-shop-icon{
+    position: absolute;
+    left: 264px;
+    top: 664px;
+    z-index: 2;
+}
+.upperbody-takingcare-icon{
+    position: absolute;
+    left: 576px;
+    top: 662px;
+    z-index: 2;
+}
+/*BESTSELLING*/
+.bestselling-content{
+    position: absolute;
+    width: 1519px;
+    height: 400px;
+    left: 0px;
+    top: 804px;
+    background: #D72631;
+}
+.bestselling-text1{
+    position: absolute;
+    width: 233px;
+    height: 123px;
+    left: 60px;
+    top: 50px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 111.5%;
+    color: #FFFFFF;
+}
+.bestselling-text2{
+    position: absolute;
+    width: 197px;
+    height: 55px;
+    left: 60px;
+    top: 220px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 111.5%;
+    color: #FFFFFF;
+}
+.bestselling-headline{
+    position: absolute;
+    width: 272.02px;
+    height: 0px;
+    left: 175px;
+    top: 200px;
+
+    border: 1.6px solid rgba(255, 255, 255, 0.76);
+    background-color:  rgba(255, 255, 255, 0.76);
+    transform: rotate(90deg);
+}
+
+
+/*FAQ*/
+.faq-content{
+    position: absolute;
+    width: 1519px;
+    height: 977px;
+    left: 0px;
+    top: 1203px;
+    background: #E4FFF7;
+}
+.faq-header{
+    position: absolute;
+    width: 1519px;
+    height: 301px;
+    left: -2px;
+    background: url("../Images And Logos/BG Images/FAQ BG.png");
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.faq-text{
+    position: absolute;
+    width: 1189px;
+    height: 88px;
+    left: 171px;
+    top: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 75px;
+    line-height: 111.5%;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #245335;
+}   
+
+.faq-container{
+    position:absolute;
+    left:350px;
+    top: 370px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.faq-container-question button{
+    width: 100%;
+    background-color: #077B8A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+.faq-container-question p{
+    font-size: 18px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    font-family: 'Arvo';
+    font-style:normal;
+    color: #054a54;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: white;
+}
+.faq-container-question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.faq-container-question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+.faq-img1{
+    position: absolute;
+    top: 350px;
+    width: 350px;
+    height: 350px;
+}
+.faq-img2{
+    position: absolute;
+    top: 340px;
+    left: 1150px;
+    width: 360px;
+    height: 360px;
+}
+/*CONTACTS*/
+.contacts-content{
+    position: absolute;
+    width: 1519px;
+    height: 283px;
+    left: 0px;
+    top: 2180px;
+
+    background: #077B8A;
+}
+.contacts-logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 93px;
+}
+.contacts-logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 80px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.contacts-logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 127px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+.contacts-contactus-text{
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 500px;
+    top: 35px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #073C43;
+}
+.contacts-contactus-address-text{
+    position: absolute;
+    width: 250px;
+    top: 80px;
+    left: 535px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #073C43;
+}
+.contacts-contactus-address-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 98px;
+}
+.contacts-contactus-email-text{
+    
+    position: absolute;
+    left: 535px;
+    top: 138px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #073C43;
+}
+.contacts-contactus-email-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 150px;
+}
+.contacts-button-home{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-plants{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 55px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 820px;
+    top: 90px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-bestselling{
+    position: absolute;
+    width: 159px;
+    height: 28px;
+    left: 820px;
+    top: 125px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-faq{
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    left: 820px;
+    top: 160px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-ask-text{
+    position: absolute;
+    width: 400px;
+    height: 39px;
+    left: 1000px;
+    top: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.contacts-ask-textbox{
+    position: absolute;
+    width: 260px;
+    height: 43.54px;
+    left: 1100px;
+    top: 90px;
+
+    border-radius: 15px;
+    border-style: hidden;
+}
+.contacts-ask-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 26px;
+
+    position: absolute;
+    width: 265px;
+    height: 43.54px;
+    left: 1100px;
+    top: 150px;
+
+    background: #073C43;
+    border-radius: 10px;
+    border-style: hidden;
+    cursor: pointer;
+}
+.contacts-ask-button-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+

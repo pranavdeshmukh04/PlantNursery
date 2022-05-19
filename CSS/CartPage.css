@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,600|Arvo:700");
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+/*LOGO*/
+.logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 33px;
+}
+.logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 66px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+.count_ellipse{
+    position: absolute;
+    top: 30px;
+    background: #077B8A;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #d5eae4;
+    text-align: center;
+    background: #077B8A;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+/*UPPERBODY*/
+.upperbody-content{
+    position: absolute;
+    width: 1519px;
+    height: 1404px;
+    left: 0px;
+    top: 0px;
+    background: #A2D5C6;
+}
+.upperbody-headline{
+    position: absolute;
+    width: 1350px;
+    height: 0px;
+    left: 95px;
+    top: 113px;
+    border: 1.6px solid rgba(7, 123, 138, 0.4);
+    background-color: rgba(7, 123, 138, 0.4);
+}
+.logo-cart{
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    left: 1285px;
+    top: 40px;
+}
+.logo-profile{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 1360px;
+    top: 40px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.header-texts{
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #000000;
+}
+.header-plants{
+    position: absolute;
+    width: 95px;
+    height: 27px;
+    left: 557px;
+    top: 34px;
+}
+.header-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 671px;
+    top: 34px;
+    cursor: pointer;
+}
+.header-bestselling{
+    position: absolute;
+    width: 159px;
+    height: 27px;
+    left: 857px;
+    top: 34px;
+}
+.header-faq{
+    position: absolute;
+    width: 54px;
+    height: 27px;
+    left: 1035px;
+    top: 34px;
+}
+.header-contact{
+    position: absolute;
+    width: 113px;
+    height: 27px;
+    left: 1108px;
+    top: 34px;
+    cursor: pointer;
+}
+/*CART*/
+.cart-content-left{
+    position: absolute;
+    width: 800px;
+    height: 1220px;
+    top: 140px;
+    left: 120px;
+    background-color: #d5eae4;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+}
+.cart-content-right{
+    position: absolute;
+    width: 500px;
+    height: 620px;
+    top: 140px;
+    left: 920px;
+    background-color:#077B8A;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.shoppingcart-text{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #077B8A;
+}
+.no-of-items-text{
+    position: absolute;
+    left: 655px;
+    top: 10px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #077B8A;
+}
+.shoppingcart-headline{
+    position: absolute;
+    width: 700px;
+    height: 0px;
+    left: 55px;
+    top: 100px;
+    border: 1.6px solid rgba(7, 123, 138, 0.4);
+    background-color: rgba(7, 123, 138, 0.4);
+}
+.ordersummary-text{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #d5eae4;
+}
+.ordersummary-headline1{
+    position: absolute;
+    width: 390px;
+    height: 0px;
+    left: 55px;
+    top: 100px;
+    border: 1.6px solid #d5eae4;
+    background-color: #d5eae4;
+}
+.cart-container{
+    font-family: 'Arvo';
+    font-style: normal;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+}
+.cart-header{
+    color: #077B8A;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(7, 123, 138, 0.4);
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    margin-top: 10px;
+
+}
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 40%;
+}
+
+.cart-price {
+    width: 20%;
+}
+
+.cart-quantity {
+    width: 40%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .9em;
+    margin-top: 1em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color:  #e86069;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.empty-cart{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-delivery{
+    position: absolute;
+    left: 300px;
+    top: 15px; 
+    color: white;
+    background-color:  #e86069;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-delivery:hover {
+    background-color:  #D72631;
+}
+.btn-danger:hover {
+    background-color:  #D72631;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 2px solid #077B8A;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 2px solid rgba(7, 123, 138, 0.4);
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.continue-shopping{
+    position: absolute;
+    top: 605px;
+    left: 280px;
+    color:  #077B8A;
+    font-size: 18px;
+    font-family: 'Arvo';
+    font-style: normal;
+}
+.item-no-text{
+    position: absolute;
+    left: 55px;
+    top: 140px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: #d5eae4;
+}
+.cart-total-price{
+    position: absolute;
+    left: 370px;
+    top: 140px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: black;
+}
+.shipping-text{
+    position: absolute;
+    left: 55px;
+    top: 200px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: #d5eae4;
+}
+.shipping-radiobtn{
+    position: absolute;
+    left: 55px;
+    top: 235px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 37px;
+    color: black;
+}
+input[type="radio"]{
+    accent-color: #5C3C92;
+}
+.promocode-text{
+    position: absolute;
+    left: 55px;
+    top: 320px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: #d5eae4;
+}
+.promocode-box{
+    position: absolute;
+    left: 55px;
+    top: 365px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 37px;
+    padding-right: 170px;
+    border-radius: 10px;
+    border: none;
+}
+.btn-promocode {
+    position: absolute;
+    top: 420px;
+    left: 55px;
+    color: white;
+    background-color:  #e86069;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-promocode:hover {
+    background-color:  #D72631;
+}
+.ordersummary-headline2{
+    position: absolute;
+    width: 390px;
+    height: 0px;
+    left: 55px;
+    top: 480px;
+    border: 1.6px solid #d5eae4;
+    background-color: #d5eae4;
+}
+.total-cost-text{
+    position: absolute;
+    left: 55px;
+    top: 500px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: #d5eae4;
+}
+.total-cost-price{
+    position: absolute;
+    left: 370px;
+    top: 500px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37px;
+    color: black;
+}
+.btn-checkout{
+    position: absolute;
+    top: 550px;
+    left: 55px;
+    color: white;
+    background-color:  #9c76de;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 10px 60px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-checkout:hover{
+    background-color: #5C3C92;
+}
+/*CONTACT US*/
+.contacts-content{
+    position: absolute;
+    width: 1519px;
+    height: 283px;
+    left: 0px;
+    top: 800px;
+
+    background: #077B8A;
+}
+.contacts-logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 93px;
+}
+.contacts-logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 80px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.contacts-logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 127px;
+    border-radius: 5px;
+    /* background: #33C238; */
+    background: #1fa323;
+}
+.contacts-contactus-text{
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 500px;
+    top: 35px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #073C43;
+}
+.contacts-contactus-address-text{
+    position: absolute;
+    width: 250px;
+    top: 80px;
+    left: 535px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #073C43;
+}
+.contacts-contactus-address-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 98px;
+}
+.contacts-contactus-email-text{
+    
+    position: absolute;
+    left: 535px;
+    top: 138px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #073C43;
+}
+.contacts-contactus-email-icon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 500px;
+    top: 150px;
+}
+.contacts-button-home{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-plants{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    left: 820px;
+    top: 55px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-pots{
+    position: absolute;
+    width: 167px;
+    height: 27px;
+    left: 820px;
+    top: 90px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-bestselling{
+    position: absolute;
+    width: 159px;
+    height: 28px;
+    left: 820px;
+    top: 125px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-button-faq{
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    left: 820px;
+    top: 160px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+.contacts-ask-text{
+    position: absolute;
+    width: 400px;
+    height: 39px;
+    left: 1000px;
+    top: 15px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.contacts-ask-textbox{
+    position: absolute;
+    width: 260px;
+    height: 43.54px;
+    left: 1100px;
+    top: 90px;
+
+    border-radius: 15px;
+    border-style: hidden;
+}
+.contacts-ask-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 26px;
+
+    position: absolute;
+    width: 265px;
+    height: 43.54px;
+    left: 1100px;
+    top: 150px;
+
+    background: #073C43;
+    border-radius: 10px;
+    border-style: hidden;
+    cursor: pointer;
+}
+.contacts-ask-button-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}

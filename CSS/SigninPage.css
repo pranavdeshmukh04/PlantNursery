@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,600|Arvo:700");
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: absolute;
+    width: 1519px;
+    height: 780px;
+    left: 0px;
+    top: 0px;
+    background: #A2D5C6;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.signin-content{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    top: 90px;
+    left: 250px;
+    background-color: white;
+    border-radius: 40px;
+}
+.signin-left-content img{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.signin-right-content{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 500px;
+}
+.logo-leaf{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 70px;
+    top: 33px;
+}
+.logo-title{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 134px;
+    top: 20px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+.logo-ellipse{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 241px;
+    top: 66px;
+    border-radius: 5px;
+    background: #1fa323;
+}
+.registration-text{
+    position: absolute;
+    width: 293px;
+    height: 48px;
+    left: 210px;
+    top: 90px;
+
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #077B8A; 
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 330px;
+    margin-top: 30px;
+    top: 170px;
+    left: 50px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Arvo';
+    font-style: normal;
+    border-bottom: 3px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #077B8A;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 25px;
+    font-family: 'Arvo';
+    font-style: normal;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #077B8A;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .text{
+    color: #999;
+    font-size: 14px;
+    font-family: 'Arvo';
+    font-style: normal;
+}
+
+.form a.text{
+    color: #077B8A;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button button{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color:#077B8A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 40px;
+}
+
+.button button:hover{
+    background-color: #064b54;
+}
+.input-field button{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Arvo';
+    font-style: normal;
+    border-bottom: 3px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.form .login-signin{
+    position: absolute;
+    top: 410px;
+    left: 150px;
+    margin-top: 30px;
+    text-align: center;
+}
