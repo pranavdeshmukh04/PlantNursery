@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    require_once('../PHP/createDB.php');
+    require_once('../PHP/component.php');
+    $database = new createDB("Plantdb", "Planttb");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -283,23 +290,31 @@
                     <img src="../Images And Logos/PlantNursery Logo/Logo.png" alt="">
                 </div>
                 <div class="logo-title">
-                    <a href="MainPage.html"><p>PLANT NURSERY</p></a>
+                    <a href="MainPage.php"><p>PLANT NURSERY</p></a>
                 </div>
                 <div class="logo-ellipse"></div>
             </div>
             <div class="header-content">
                 <div class="upperbody-headline"></div>
                 <div class="logo-cart">
-                    <a href="CartPage.html">
+                    <a href="CartPage.php">
                         <img src="../Images And Logos/PlantNursery Logo/Cart.png" alt="">
+                        <?php
+                            if (isset($_SESSION['cart'])){
+                                $count = count($_SESSION['cart']);
+                                echo "<div id=\"cart_count\" class=\"count_ellipse\">$count</div>";
+                            }else{
+                                echo "<div id=\"cart_count\" class=\"count_ellipse\">0</div>";
+                            }
+                        ?>
                     </a>
                 </div>
                 <div class="logo-profile">
-                    <a href="ProfilePage.html"><img src="../Images And Logos/PlantNursery Logo/User Profile.png" alt=""></a>
+                    <a href="ProfilePage.php"><img src="../Images And Logos/PlantNursery Logo/User Profile.png" alt=""></a>
                 </div>
                 <div class="header-texts">
-                    <a href="ShopNowPage.html"><p class="header-plants">PLANTS</p></a>
-                    <a href="ShopNowPage.html#potsnacc-section"><p class="header-pots">POTS AND ACC.</p></a>
+                    <a href="ShopNowPage.php"><p class="header-plants">PLANTS</p></a>
+                    <a href="ShopNowPage.php#potsnacc-section"><p class="header-pots">POTS AND ACC.</p></a>
                     <a href="#bestselling-section"><p class="header-bestselling">BEST SELLING</p></a>
                     <a href="#faq-section"><p class="header-faq">FAQ</p></a>
                     <a href="#contacts-section"><p class="header-contact">CONTACT</p></a>
@@ -328,14 +343,14 @@
             </div>
             <div class="upperbody-buttons">
                 <div class="shop-button">
-                    <a href="ShopNowPage.html"><p class="upperbody-shop-text">SHOP NOW</p></a>
-                    <a href="ShopNowPage.html"><button class="upperbody-shop-button" onclick=""></button></a>
+                    <a href="ShopNowPage.php"><p class="upperbody-shop-text">SHOP NOW</p></a>
+                    <a href="ShopNowPage.php"><button class="upperbody-shop-button" onclick=""></button></a>
                     <img src="../Images And Logos/PlantNursery Logo/shopbutton.png" alt="" class="upperbody-shop-icon">
                 </div>
                 
                 <div class="takingcare-button">
-                    <a href="ShopNowPage.html"><p class="upperbody-takingcare-text">TAKING CARE</p></a>
-                    <a href="ShopNowPage.html#potsnacc-section"><button class="upperbody-takingcare-button"></button></a>
+                    <a href="ShopNowPage.php"><p class="upperbody-takingcare-text">TAKING CARE</p></a>
+                    <a href="ShopNowPage.php#potsnacc-section"><button class="upperbody-takingcare-button"></button></a>
                     <img src="../Images And Logos/PlantNursery Logo/takingcarebutton.png" alt="" class="upperbody-takingcare-icon">
                 </div>
                 
@@ -345,9 +360,17 @@
             <p class="bestselling-text1">BEST SELLING</p>
             <p class="bestselling-text2">Discover the best selling plants</p>
             <div class="bestselling-headline"></div>
-            <a href="ShopNowPage.html"></a>
+            <a href="ShopNowPage.php"></a>
             <div class="shopnow-container-content">
                 <div class="shop-items">
+                    <?php
+                        $result = $database -> getData();
+                        while($row = mysqli_fetch_assoc($result)){
+                            if($row['Bestselling'] == 'Yes'){
+                                plantcomponent($row['Item_Name'], $row['Item_Price'], $row['Item_Img'], $row['Item_ID'], $row['Bestselling'], $row['Item_Type']);
+                            }
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -394,7 +417,7 @@
                     <img src="../Images And Logos/PlantNursery Logo/Logo.png" alt="">
                 </div>
                 <div class="contacts-logo-title">
-                    <a href="MainPage.html"><p>PLANT NURSERY</p></a>
+                    <a href="MainPage.php"><p>PLANT NURSERY</p></a>
                 </div>
                 <div class="contacts-logo-ellipse"></div>
             </div>
@@ -410,8 +433,8 @@
                 </div>
                 <div class="contacts-button-texts">
                     <a href="#upperbody-section"><p class="contacts-button-home">HOME</p></a>
-                    <a href="ShopNowPage.html"><p class="contacts-button-plants">PLANTS</p></a>
-                    <a href="ShopNowPage.html#potsnacc-section"><p class="contacts-button-pots">POTS AND ACC.</p></a>
+                    <a href="ShopNowPage.php"><p class="contacts-button-plants">PLANTS</p></a>
+                    <a href="ShopNowPage.php#potsnacc-section"><p class="contacts-button-pots">POTS AND ACC.</p></a>
                     <a href="#bestselling-section"><p class="contacts-button-bestselling">BEST SELLING</p></a>
                     <a href="#faq-section"><p class="contacts-button-faq">FAQ</p></a>
                 </div>

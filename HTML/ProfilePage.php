@@ -1,3 +1,13 @@
+<?php
+    include '../PHP/profileconfig.php';
+    require_once('../PHP/component.php');
+    session_start();
+    
+    if (!isset($_SESSION['username']) and !isset($_SESSION['email'])) {
+        echo "<script>alert('Username session not set.')</script>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -248,25 +258,33 @@
                     <img src="../Images And Logos/PlantNursery Logo/Logo.png" alt="">
                 </div>
                 <div class="logo-title">
-                    <a href="MainPage.htmlShopNowPage.html"><p>PLANT NURSERY</p></a>
+                    <a href="MainPage.php"><p>PLANT NURSERY</p></a>
                 </div>
                 <div class="logo-ellipse"></div>
             </div>
             <div class="header-content">
                 <div class="upperbody-headline"></div>
                 <div class="logo-cart">
-                    <a href="CartPage.htmlShopNowPage.html">
+                    <a href="CartPage.php">
                         <img src="../Images And Logos/PlantNursery Logo/Cart.png" alt="">
+                        <?php
+                            if (isset($_SESSION['cart'])){
+                                $count = count($_SESSION['cart']);
+                                echo "<div id=\"cart_count\" class=\"count_ellipse\">$count</div>";
+                            }else{
+                                echo "<div id=\"cart_count\" class=\"count_ellipse\">0</div>";
+                            }
+                        ?>
                     </a>
                 </div>
                 <div class="logo-profile">
-                    <a href="ProfilePage.htmlShopNowPage.html"><img src="../Images And Logos/PlantNursery Logo/User Profile.png" alt=""></a>
+                    <a href="ProfilePage.php"><img src="../Images And Logos/PlantNursery Logo/User Profile.png" alt=""></a>
                 </div>
                 <div class="header-texts">
-                    <a href="ShopNowPage.html"><p class="header-plants">PLANTS</p></a>
-                    <a href="ShopNowPage.html#potsnacc-section"><p class="header-pots">POTS AND ACC.</p></a>
-                    <a href="MainPage.htmlShopNowPage.html#bestselling-section"><p class="header-bestselling">BEST SELLING</p></a>
-                    <a href="MainPage.htmlShopNowPage.html#faq-section"><p class="header-faq">FAQ</p></a>
+                    <a href="ShopNowPage.php"><p class="header-plants">PLANTS</p></a>
+                    <a href="ShopNowPage.php#potsnacc-section"><p class="header-pots">POTS AND ACC.</p></a>
+                    <a href="MainPage.php#bestselling-section"><p class="header-bestselling">BEST SELLING</p></a>
+                    <a href="MainPage.php#faq-section"><p class="header-faq">FAQ</p></a>
                     <a href="#contacts-section"><p class="header-contact">CONTACT</p></a>
                 </div>
             </div>
@@ -277,9 +295,9 @@
        <div class="profile-text">PROFILE</div> 
        <div class="profile-headline"></div>
        <div class="username-text">USERNAME : </div>
-       <div class="username-display"><?htmlShopNowPage.html echo $_SESSION['username']; ?></div>
+       <div class="username-display"><?php echo $_SESSION['username']; ?></div>
        <div class="email-text">EMAIL : </div>
-       <div class="email-display"><?htmlShopNowPage.html echo $_SESSION['email']; ?></div>
+       <div class="email-display"><?php echo $_SESSION['email']; ?></div>
        <!-- <div class="address-text">ADDRESS : </div>
 
        <div class="address" id="add">
@@ -305,7 +323,7 @@
            <button name="password-btn" class="password-btn">UPDATE</button>
        </div>
        
-       <a href="../htmlShopNowPage.html/logout.htmlShopNowPage.html"><div class="logout"><i class="fas fa-chevron-left d-arrow"></i> &nbsp;LOGOUT</div></a>
+       <a href="../PHP/logout.php"><div class="logout"><i class="fas fa-chevron-left d-arrow"></i> &nbsp;LOGOUT</div></a>
     </div>
     <div class="contacts-content" id="contacts-section">
         <div class="contacts-logo-content">
@@ -313,7 +331,7 @@
                 <img src="../Images And Logos/PlantNursery Logo/Logo.png" alt="">
             </div>
             <div class="contacts-logo-title">
-                <a href="MainPage.htmlShopNowPage.html"><p>PLANT NURSERY</p></a>
+                <a href="MainPage.php"><p>PLANT NURSERY</p></a>
             </div>
             <div class="contacts-logo-ellipse"></div>
         </div>
@@ -329,10 +347,10 @@
             </div>
             <div class="contacts-button-texts">
                 <a href="#upperbody-section"><p class="contacts-button-home">HOME</p></a>
-                <a href="ShopNowPage.html"><p class="contacts-button-plants">PLANTS</p></a>
-                <a href="ShopNowPage.html#potsnacc-section"><p class="contacts-button-pots">POTS AND ACC.</p></a>
-                <a href="MainPage.htmlShopNowPage.html#bestselling-section"><p class="contacts-button-bestselling">BEST SELLING</p></a>
-                <a href="MainPage.htmlShopNowPage.html#faq-section"><p class="contacts-button-faq">FAQ</p></a>
+                <a href="ShopNowPage.php"><p class="contacts-button-plants">PLANTS</p></a>
+                <a href="ShopNowPage.php#potsnacc-section"><p class="contacts-button-pots">POTS AND ACC.</p></a>
+                <a href="MainPage.php#bestselling-section"><p class="contacts-button-bestselling">BEST SELLING</p></a>
+                <a href="MainPage.php#faq-section"><p class="contacts-button-faq">FAQ</p></a>
             </div>
             <div class="contacts-ask">
                 <p class="contacts-ask-text">ASK QUESTIONS</p>

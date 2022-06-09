@@ -1,3 +1,66 @@
+<?php
+    include '../PHP/profileconfig.php';
+    require_once('../PHP/component.php');
+    error_reporting(0);
+    session_start();
+
+    if (isset($_SESSION['username']) and isset($_SESSION['email'])) {
+        header("Location: SigninPage.php");
+    }
+    if(isset($_POST['register'])){
+        
+        $password = md5($_POST['password']);
+        $cpassword = md5($_POST['cpassword']);
+        
+        if (empty($_POST["username"])) {
+            echo "<script>alert('Name is required')</script>";
+          } else {
+            $username = $_POST['username'];
+            if (!preg_match("/^[A-Za-z][A-Za-z0-9_]*$/",$username)) {
+              echo "<script>alert('Only letters, numbers and white space allowed');</script>";
+            }
+          }
+          
+        if (empty($_POST["email"])) {
+            echo "<script>alert('Email is required');</script>";
+        } else {
+            $email = $_POST["email"];
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "<script>alert('Invalid email format');</script>";
+        }
+        }
+        if ($password == $cpassword) {
+            $sql = "SELECT * FROM profiletb WHERE email='$email'";
+            $result = mysqli_query($conn, $sql);
+            if (!$result->num_rows > 0) {
+                $sql = "INSERT INTO profiletb (USERNAME, EMAIL, PASSWORD)
+                        VALUES ('$username', '$email', '$password')";
+                $result = mysqli_query($conn, $sql);
+                if ($result and !empty($_POST["username"]) and !empty($_POST["email"])) {
+                    echo "<script>alert('User Registration Completed.')</script>";
+                    $username = "";
+                    $email = "";
+                    $_POST['password'] = "";
+                    $_POST['cpassword'] = "";
+                } else {
+                    // $msg = 'Something Wrong Went.';
+                    // notificationcomponent($msg);
+                    echo "<script>alert('Something Wrong Went.')</script>";
+                }
+            } else {
+                // $msg = 'Email Already Exists.';
+                // notificationcomponent($msg);
+                echo "<script>alert('Email Already Exists.')</script>";
+                $email = "";
+            }
+            
+        } else {
+            echo "<script>alert('Password Not Matched.')</script>";
+            $_POST['password'] = "";
+            $_POST['cpassword'] = "";
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -197,7 +260,7 @@
                                 <i class="uil uil-lock icon"></i>
                             </div>
                             <div class="input-field button">
-                                <!-- <a href="SigninPage.html"> -->
+                                <!-- <a href="SigninPage.php"> -->
                                     <!-- <input type="button" name="register" value="REGISTER NOW"> -->
                                     <button name="register" formnovalidate>REGISTER NOW</button>
                                 <!-- </a> -->
@@ -206,7 +269,7 @@
                         </form>
                         <div class="login-signup">
                             <span class="text">
-                                Already a member? <a href="SigninPage.html" class="text login-link">Signin now</a>
+                                Already a member? <a href="SigninPage.php" class="text login-link">Signin now</a>
                             </span>
                         </div>
                     </div>
