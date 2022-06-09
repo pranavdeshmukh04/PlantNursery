@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nursery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="icon" href="../Images And Logos/PlantNursery Logo/favicon.png">
+    <link rel="stylesheet" href="../CSS/CartPage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <style>
+        .count_ellipse{
+            position: absolute;
+            top: 30px;
+            background: #077B8A;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            font-size: 16px;
+            color: #d5eae4;
+            text-align: center;
+            background: #077B8A;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+        }
+        .cart-header{
+            color: #077B8A;
+        }
+        .cart-column {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid rgba(7, 123, 138, 0.4);
+            margin-right: 1.5em;
+            padding-bottom: 10px;
+            padding-right: 50px;
+            margin-top: 10px;
+
+        }
+        .cart-row {
+            display: flex;
+        }
+
+        .cart-item {
+            width: 40%;
+        }
+
+        .cart-price {
+            width: 20%;
+        }
+
+        .cart-quantity {
+            width: 40%;
+        }
+        .empty-cart{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-delivery{
+            position: absolute;
+            left: 300px;
+            top: 15px; 
+            color: white;
+            background-color:  #e86069;
+            border: none;
+            border-radius: .3em;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-family: 'Arvo';
+            font-style: normal;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn-delivery:hover {
+            background-color:  #D72631;
+        }
+        .wobble-ver-left {
+            -webkit-animation: wobble-ver-left 0.8s both;
+                    animation: wobble-ver-left 0.8s both;
+            }
+            @-webkit-keyframes wobble-ver-left {
+            0%,
+            100% {
+                -webkit-transform: translateY(0) rotate(0);
+                        transform: translateY(0) rotate(0);
+                -webkit-transform-origin: 50% 50%;
+                        transform-origin: 50% 50%;
+            }
+            15% {
+                -webkit-transform: translateY(-30px) rotate(-6deg);
+                        transform: translateY(-30px) rotate(-6deg);
+            }
+            30% {
+                -webkit-transform: translateY(15px) rotate(6deg);
+                        transform: translateY(15px) rotate(6deg);
+            }
+            45% {
+                -webkit-transform: translateY(-15px) rotate(-3.6deg);
+                        transform: translateY(-15px) rotate(-3.6deg);
+            }
+            60% {
+                -webkit-transform: translateY(9px) rotate(2.4deg);
+                        transform: translateY(9px) rotate(2.4deg);
+            }
+            75% {
+                -webkit-transform: translateY(-6px) rotate(-1.2deg);
+                        transform: translateY(-6px) rotate(-1.2deg);
+            }
+            }
+            @keyframes wobble-ver-left {
+            0%,
+            100% {
+                -webkit-transform: translateY(0) rotate(0);
+                        transform: translateY(0) rotate(0);
+                -webkit-transform-origin: 50% 50%;
+                        transform-origin: 50% 50%;
+            }
+            15% {
+                -webkit-transform: translateY(-30px) rotate(-6deg);
+                        transform: translateY(-30px) rotate(-6deg);
+            }
+            30% {
+                -webkit-transform: translateY(15px) rotate(6deg);
+                        transform: translateY(15px) rotate(6deg);
+            }
+            45% {
+                -webkit-transform: translateY(-15px) rotate(-3.6deg);
+                        transform: translateY(-15px) rotate(-3.6deg);
+            }
+            60% {
+                -webkit-transform: translateY(9px) rotate(2.4deg);
+                        transform: translateY(9px) rotate(2.4deg);
+            }
+            75% {
+                -webkit-transform: translateY(-6px) rotate(-1.2deg);
+                        transform: translateY(-6px) rotate(-1.2deg);
+            }
+            }
+            .swal-overlay{
+                background-color: rgb(213, 234, 228, 0.7);
+            }
+            .swal-title, .swal-text{
+                font-family: "Arvo";
+            }
+    </style>
+</head>
+
+<body>
+    <div class="mainpage">
+        <div class="upperbody-content" id="upperbody-section">
+            <div class="upperbody-rectangle"></div>
+            <div class="logo-content">
+                <div class="logo-leaf wobble-ver-left">
+                    <img src="../Images And Logos/PlantNursery Logo/Logo.png" alt="">
+                </div>
+                <div class="logo-title">
+                    <a href="MainPage.html"><p>PLANT NURSERY</p></a>
+                </div>
+                <div class="logo-ellipse"></div>
+            </div>
+            <div class="header-content">
+                <div class="upperbody-headline"></div>
+                <div class="logo-cart">
+                    <a href="CartPage.html">
+                        <img src="../Images And Logos/PlantNursery Logo/Cart.png" alt="">
+                    </a>
+                </div>
+                <div class="logo-profile">
+                    <a href="ProfilePage.html"><img src="../Images And Logos/PlantNursery Logo/User Profile.png" alt=""></a>
+                </div>
+                <div class="header-texts">
+                    <a href="ShopNowPage.html"><p class="header-plants">PLANTS</p></a>
+                    <a href="ShopNowPage.html#potsnacc-section"><p class="header-pots">POTS AND ACC.</p></a>
+                    <a href="MainPage.html#bestselling-section"><p class="header-bestselling">BEST SELLING</p></a>
+                    <a href="MainPage.html#faq-section"><p class="header-faq">FAQ</p></a>
+                    <a href="#contacts-section"><p class="header-contact">CONTACT</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-content">
+        <div class="cart-content-left">
+            <p class="shoppingcart-text">SHOPPING CART</p>
+            <div class="shoppingcart-headline"></div>
+            <div class="cart-container">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">PLANT</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">REMOVE</span>
+                </div>
+                <div class="cart-items">
+                </div>
+            </div>
+        </div>
+        <div class="cart-content-right">
+            <p class="ordersummary-text">ORDER SUMMARY</p>
+            <div class="ordersummary-headline1"></div>
+            <div class="cart-total">
+                <span class="cart-total-price"><?html echo "Rs. ".$amount?></span>
+            </div>
+            <div class="shipping-content">
+                <span class="shipping-text">SHIPPING</span>
+                <div class="shipping-radiobtn">
+                    <form id="delivery" method="post">
+                        <input type="radio" name="del" id="standard" class="radiobtn-input" value="200"> &nbsp; Standard Delivery : Rs.200
+                        <br>
+                        <input type="radio" name="del" id="fast" class="radiobtn-input" value="350"> &nbsp; Fast Delivery : Rs.350
+                        <input type="submit" value="SELECT" class="btn-delivery">
+                    </form>
+                </div>
+            </div>
+            <div class="promocode-content">
+                <span class="promocode-text">PROMOCODE</span>
+                
+                <form action="" method="POST">
+                    <input type="text" name="promocodeinput" id="" placeholder="ENTER CODE HERE" class="promocode-box">
+                    <button class="btn-promocode" name="promocode">APPLY</button>
+                </form>
+            </div>
+            <div class="ordersummary-headline2"></div>
+            <span class="total-cost-text">TOTAL COST</span>
+            <div class="total-cost">
+                <span class="total-cost-price">
+                </span>
+            </div>
+            <form action="" method="POST">
+                <button class="btn-checkout" name="checkout">CHECKOUT</button>
+            </form>
+            <div class="continue-shopping">
+                <a href="ShopNowPage.html"><p class="continue-shopping-text"><i class="fas fa-chevron-left d-arrow"></i> &nbsp; Continue Shopping</p></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!-- <script>
+        $('#btn-remove').on('click', function(){
+             Swal.fire({
+                title: 'Product removed from the cart!',
+                type: 'warning',
+             })   
+        })
+    </script> -->
+</body>
+</html>
