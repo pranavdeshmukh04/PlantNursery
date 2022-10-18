@@ -1,3 +1,3 @@
-# Plant-Nursery
-### WEB TECH Theory Project using HTML CSS JS PHP MYSQL.
-#### By PRANAV DESHMUKH (20BCE7282) and PRANAY NATH (20BCE7249)
+# Plant-Nursery-Website
+#### By PRANAV DESHMUKH (20BCE7282)
+
